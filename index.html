@@ -9,14 +9,14 @@
 </head>
 <body>
   <main class="todobox flex flex-col justify-center items-center">
-    <div class="todoCont bg-slate-500 p-4 rounded-lg">
-      <h1 class="">Simple Tos-Dos</h1>
+    <div class="bg-slate-500 p-4 rounded-lg">
+      <h1 class="text-xl text-center font-bold">Simple Tos-Dos</h1>
       <div class="todoItem py-1 px-2 my-2 bg-slate-400 rounded-lg">
-        <input type="checkbox">
-        <input class="outline-none bg-transparent">
-        <button class="rmv" onclick="rmvTodo()">&times;</button>
+        <input id="checkbox" type="checkbox" onclick="checklist(event)">
+        <input class="textbox outline-none bg-transparent">
+        <button class="rmv">&times;</button>
       </div>
-      <button onclick="addTodo()">Add Item</button>
+      <button class="todoInsert" onclick="addTodo()">Add Item</button>
     </div>
   </main>
   <script src="./js/main.js"></script>
